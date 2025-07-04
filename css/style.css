@@ -1,0 +1,107 @@
+:root {
+    --main-color: #fff;
+    --green-color: #266429;
+    --orange-color: linear-gradient(90deg, #F27701 0%, #FF7D00 100%);
+    --footer-color: #FEF0E6;
+}
+
+/* Mains */
+
+/* Start Nav */
+nav .links {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .navbar-brand {
+    width: 192.9px;
+}
+
+nav .navbar-brand .img-logo {
+    width: 100px;
+    margin-left: 10px;
+}
+
+nav .navbar-brand .text-logo {
+    width: 108px;
+}
+
+nav .nav-butn {
+    border: 1px solid #F27701;
+    outline: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 8px;
+    color: #fff;
+    background-color: #F27701;
+    border-radius: 40px;
+}
+
+nav .nav-butn svg {
+    background-color: white;
+    width: 40px;
+    padding: 8px;
+    color: #F27701;
+    border-radius: 40px;
+}
+
+/* End Nav */
+/* Start Landing */
+.landing .text-sec {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.landing span {
+    color: #F27701;
+}
+
+.landing .land-butn {
+    border: 1px solid #F27701;
+    width: 200px;
+    outline: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 8px;
+    color: #fff;
+    background-color: #F27701;
+    border-radius: 40px;
+}
+
+.landing .land-butn svg {
+    background-color: white;
+    width: 30px;
+    padding: 8px;
+    color: #F27701;
+    border-radius: 50px;
+}
+
+.landing .imgs {
+    width: 550px;
+    max-width: 100%;
+    position: relative;
+}
+
+.landing .imgs .larg-img {
+    max-width: 100%;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+}
+
+.landing .imgs .small-img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: -10%;
+}
+
+/* End Landing */
