@@ -16,7 +16,6 @@
 
 .main-title h5 {
     color: #FF7D00;
-    margin-top: 80px;
 }
 
 .main-title h1 {
@@ -25,6 +24,42 @@
     font-size: 40px;
     border-bottom: 2px dashed #FF7D00;
     margin-top: 10px;
+}
+
+.first-p {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.first-p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-top: 15px solid #2E8633;
+    transform: rotate(270deg);
+}
+
+.second-p {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.second-p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-top: 15px solid #2E8633;
+    transform: rotate(270deg);
 }
 
 /* End Mains */
@@ -41,7 +76,7 @@ nav .links {
 nav .navbar-brand {
     display: flex;
     justify-content: space-between;
-    width: 192.9px;
+    width: 193px;
 }
 
 nav .navbar-brand .img-logo {
@@ -77,13 +112,30 @@ nav .nav-butn svg {
 
 /* End Nav */
 /* Start Landing */
-.landing .text-sec {
-    font-size: 19px;
-    margin-left: 20px;
+
+.landing {
     position: relative;
+    top: -50px;
 }
 
-@media (max-width:1700px) {
+.landing .text-sec {
+    font-size: 17px;
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+}
+
+@media (max-width:768px) {
+    .landing .text-sec h1 {
+        font-size: 24px;
+    }
+
+    .landing .text-sec p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:2000px) {
     .landing .text-sec::before {
         content: "Puresha";
         background-color: #F27701;
@@ -91,7 +143,7 @@ nav .nav-butn svg {
         color: white;
         border-radius: 20px;
         position: absolute;
-        top: 120%;
+        top: 130%;
         left: 50%;
         margin-right: 20px;
     }
@@ -113,24 +165,24 @@ nav .nav-butn svg {
     .landing .text-sec::before {
         content: "Puresha";
         background-color: #F27701;
-        padding: 10px 20px;
+        padding: 10px 15px;
         color: white;
         border-radius: 20px;
         position: absolute;
-        top: 85%;
+        top: 100%;
         left: 55%;
         margin-right: 20px;
     }
 
     .landing .text-sec::after {
         content: "";
-        border-left: 7.5px solid transparent;
-        border-right: 7.5px solid transparent;
-        border-top: 15px solid #F27701;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #F27701;
         transform: rotate(130deg);
         position: absolute;
         left: 50%;
-        bottom: 10%;
+        bottom: 5%;
         margin-right: 20px;
     }
 }
@@ -149,6 +201,7 @@ nav .nav-butn svg {
 
 .landing .land-butn {
     border: 1px solid #F27701;
+    font-size: 17px;
     width: 200px;
     outline: none;
     display: flex;
@@ -176,7 +229,7 @@ nav .nav-butn svg {
 .landing .imgs::before {
     content: "Enactus";
     background-color: var(--green-color);
-    padding: 10px 20px;
+    padding: 10px;
     color: white;
     border-radius: 20px;
     position: absolute;
@@ -187,9 +240,9 @@ nav .nav-butn svg {
 
 .landing .imgs::after {
     content: "";
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
-    border-top: 15px solid var(--green-color);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid var(--green-color);
     transform: rotate(220deg);
     position: absolute;
     left: -6%;
@@ -221,7 +274,7 @@ nav .nav-butn svg {
 }
 
 .landing .imgs .larg-img {
-    width: 95%;
+    width: 99.5%;
     border-top-right-radius: 150px;
     border-top-left-radius: 150px;
 }
@@ -258,41 +311,38 @@ nav .nav-butn svg {
     .landing .imgs .small-img {
         width: 40%;
         top: 50px;
-        left: -5%;
+        left: -10%;
         border-radius: 30px;
+    }
+
+    .landing .imgs {
+        left: 5%;
     }
 }
 
-.landing .band {
+.band {
     position: absolute;
-    font-size: 24px;
+    font-size: 17px;
     width: 100%;
     margin-top: 30px;
-    top: 66.2%;
+    top: 68%;
     z-index: -1000;
     color: white;
     padding: 10px 20px;
     background-color: var(--green-color);
 }
 
-@media (max-width:1355px) {
-    .landing .band {
-        top: 53.5%;
-        margin-top: 50px;
-    }
-}
-
-@media (max-width:1350px) {
-    .landing .band {
+@media (max-width:1100px) {
+    .band {
         display: none;
     }
 }
 
-.landing .band p {
+.band p {
     position: relative;
 }
 
-.landing .band p::before {
+.band p::before {
     content: "";
     border-left: 7.5px solid transparent;
     border-right: 7.5px solid transparent;
@@ -308,13 +358,12 @@ nav .nav-butn svg {
 /* Start About */
 .about .a-img {
     position: relative;
-    margin-left: 50px;
 }
 
 .about .a-img .l-img {
     width: 60%;
     position: relative;
-    left: 0;
+    left: 20%;
     border-top-left-radius: 70px;
 }
 
@@ -322,7 +371,7 @@ nav .nav-butn svg {
     position: absolute;
     width: 30%;
     top: -10%;
-    left: 45%;
+    left: 60%;
     background-color: var(--green-color);
     border-radius: 40px;
 }
@@ -338,10 +387,6 @@ nav .nav-butn svg {
         left: -10%;
     }
 
-    .about .a-img .l-img {
-        width: 55%;
-    }
-
     .about .a-img .s-img {
         width: 30%;
     }
@@ -350,7 +395,7 @@ nav .nav-butn svg {
 @media (max-width:769px) {
     .about .a-img {
         width: 95%;
-        left: -30%;
+        left: -20%;
     }
 
     .about .a-img .l-img {
@@ -359,22 +404,42 @@ nav .nav-butn svg {
 
     .about .a-img .s-img {
         width: 50%;
-        left: 80%;
+        left: 75%;
     }
 }
 
 .about .a-text {
     position: relative;
     display: grid;
-    row-gap: 32px;
-    width: 687px;
-    height: 422px;
-    font-size: 20px;
+    row-gap: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 500;
 }
 
-.about .a-text .first-p {
-    margin-bottom: 40px;
-    width: 655px;
+
+@media (max-width:769px) {
+    .about .a-text {
+        margin-left: 30px;
+    }
 }
 
 /* End About */
+/* Start Our Product */
+.product .p-text {
+    position: relative;
+    display: grid;
+    row-gap: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+@media (max-width:769px) {
+    .product .p-text {
+        margin-left: 30px;
+    }
+}
+
+/* End Our Product */
