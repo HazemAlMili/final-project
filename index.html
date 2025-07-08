@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg bg-white mb-0">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/PURESHA logo3.png " class="img-logo" alt="logo">
+                <img src="images/PURESHA logo3.png" class="img-logo" alt="logo">
                 <img src="images/PURESHA Text3.png " class="text-logo me-5" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -49,7 +49,7 @@
                             <a class="nav-link text-dark fw-semibold  fs-5" href="#ourimpact">Our Impact</a>
                         </li>
                     </ul>
-                    <a class="nav-butn fs-5" href="#" role="button">
+                    <a class="nav-butn fs-5" href="#contact" role="button">
                         Contact Us
                         <i class="fa-solid fa-phone"></i>
                     </a>
@@ -100,7 +100,7 @@
     </div>
     <!-- End Landing -->
     <!-- Start About -->
-    <div class="about" id="aboutus">
+    <div class="about section-fade" id="aboutus">
         <div class="container-fluid">
             <div class="main-title">
                 <h5>About</h5>
@@ -143,7 +143,7 @@
     </div>
     <!-- End About -->
     <!-- Start our Product -->
-    <div class="product mt-5 mb-5" id="ourproduct">
+    <div class="product section-fade" id="ourproduct">
         <div class="container-fluid">
             <div class="main-title">
                 <h5>Product</h5>
@@ -192,7 +192,7 @@
     </div>
     <!-- End our Product -->
     <!-- Start Why -->
-    <div class="whyproduct mt-5" id="ourproduct">
+    <div class="whyproduct section-fade" id="ourproduct">
         <div class="container-fluid">
             <div class="main-title">
                 <h5>Product</h5>
@@ -235,7 +235,7 @@
         </div>
     </div>
     <!-- End Why -->
-    <div class="impact mt-5 mb-5" id="ourimpact">
+    <div class="impact section-fade" id="ourimpact">
         <div class="container-fluid mb-5">
             <div class="main-title">
                 <h5>Impact</h5>
@@ -250,21 +250,25 @@
                                 Direct
                                 <i class="fa-solid fa-arrow-right"></i>
                             </h2>
-                            <h3 class="fw-bold">150</h3>
+                            <h3 class="fw-bold">
+                                <span class="counter-value" data-target="150">0</span>
+                            </h3>
                         </div>
                         <div class="col-md-6 col-lg-6 second-col">
                             <h2>
                                 In Direct
                                 <i class="fa-solid fa-arrow-right"></i>
                             </h2>
-                            <h3 class="fw-bold">7600</h3>
+                            <h3 class="fw-bold">
+                                <span class="counter-value" data-target="7600">0</span>
+                            </h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>\
-    <div class="partners">
+    </div>
+    <div class="partners section-fade">
         <div class="container-fluid">
             <div class="main-title">
                 <h5>Partners</h5>
@@ -272,23 +276,47 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="join">
+    <div class="container partners-logos my-5 section-fade">
+        <div class="row d-none d-md-flex">
+            <div class="col-md-3 mb-4">
+                <div class="logo-box"><img src="images/partner-1.png" alt="Logo 1"></div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="logo-box"><img src="images/partner-2.png" alt="Logo 2"></div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="logo-box"><img src="images/partner-3.png" alt="Logo 3"></div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="logo-box"><img src="images/partner-4.png" alt="Logo 4"></div>
+            </div>
+            <div class="col-md-4 mb-4 offset-md-0 offset-1">
+                <div class="logo-box"><img src="images/partner-5.png" alt="Logo 5"></div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="logo-box"><img src="images/partner-6.png" alt="Logo 6"></div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="logo-box"><img src="images/partner-7.png" alt="Logo 7"></div>
+            </div>
+        </div>
+        <div class="d-flex d-md-none flex-row overflow-auto logos-scroll py-3">
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-1.png" alt="Logo 1"></div>
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-2.png" alt="Logo 2"></div>
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-3.png" alt="Logo 3"></div>
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-4.png" alt="Logo 4"></div>
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-5.png" alt="Logo 5"></div>
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-6.png" alt="Logo 6"></div>
+            <div class="logo-box mx-2 flex-shrink-0"><img src="images/partner-7.png" alt="Logo 7"></div>
+        </div>
+    </div>
+    <div class="join section-fade" id="contact">
         <div class="container-fluid">
             <div class="main-title">
                 <h5>Join</h5>
                 <h1>Join Us Today</h1>
             </div>
             <div class="contact-section">
-
-
                 <div class="row">
                     <div class="col-md-6 col-lg-6">
                         <div class="contact-info mb-4">
@@ -304,12 +332,10 @@
                                 Enactus@cic-cairo.com
                             </p>
                         </div>
-
                         <div class="img-box mt-4 mb-4">
                             <img src="images/join-image.jpg" alt="Nature Image" />
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-6 form-section">
                         <form>
                             <div class="mb-4">
@@ -330,7 +356,76 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer section-fade">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 f-col">
+                    <a class="navbar-brand mt-4" href="#">
+                        <img src="images/PURESHA logo3.png " class="img-logo" alt="logo">
+                        <img src="images/PURESHA Text3.png " class="text-logo me-5" alt="">
+                    </a>
+                    <p class="mt-3 mb-3">
+                        We created an eco-friendly, healthy alternative to chemical rubber fingers in poultry processing
+                        by using banana fibers.
+                        This simple, low-cost solution helps remove feathers safely while supporting the environment and
+                        the Sufi school.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3 s-col mt-5">
+                    <p>About</p>
+                    <p>Service</p>
+                    <p>projects</p>
+                    <p>contact</p>
+                </div>
+                <div class="col-md-6 col-lg-3 t-col mt-5">
+                    <h5>
+                        Contact US
+                    </h5>
+                    <p class="mt-3">
+                        <i class="fa-solid fa-phone"></i>
+                        920035511
+                    <p>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +966 920035511
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        info@7-herbs.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-band">
+            <div>
+                <h5>Social Media</h5>
+                <a href="https://www.facebook.com/share/19GciWHZS1/">
+                    <i class="fa-brands fa-facebook ms-5"></i>
+                </a>
+                <a href="https://www.instagram.com/cic.enactus?igsh=MWpnb2Y2NTRyMXRtdA==">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@cic.enactus?_t=ZS-8xraQ7sx6Jj&_r=1">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
 
+            </div>
+            <div>
+                <p>
+                    © 2025 Brand, Inc. • Privacy • Terms • Sitemap
+                </p>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Arbic</button></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
